@@ -1,0 +1,33 @@
+{
+  "name": "pepperbox",
+  "version": "0.1.0",
+  "description": "Parser and Converter for peppermark",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf out/ && tsc",
+    "watch": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peppermark/pepperbox.git"
+  },
+  "keywords": [
+    "peppermark",
+    "markdown",
+    "notes"
+  ],
+  "author": "Florian Mysliwietz <myslflo1996@yahoo.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peppermark/pepperbox/issues"
+  },
+  "homepage": "https://github.com/peppermark/pepperbox#readme",
+  "devDependencies": {
+    "@types/node": "^12.12.14",
+    "typescript": "^3.7.3"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.1",
+    "ts-node": "^8.5.4"
+  }
+}
