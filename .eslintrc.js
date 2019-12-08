@@ -14,6 +14,8 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
   ],
   rules: {
+    '@typescript-eslint/no-empty-interface': 1,
+    '@typescript-eslint/no-empty-function': 1,
     'quotes': ['error', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
     'no-multi-assign': 'error',
     'no-tabs': 'error',

@@ -4,8 +4,7 @@
     "target": "es5",
     "module": "commonjs",
     "lib": ["es6"],
-    "outDir": "out",
-    "rootDir": "src",
+    "rootDir": "../src",
     "removeComments": true,
     "downlevelIteration": true,
 
@@ -24,5 +23,12 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "forceConsistentCasingInFileNames": true
-  }
+  },
+  "include": [
+    "../src/**/*"
+  ],
+  "exclude": [
+    "../node_modules",
+    "../dist"
+  ]
 }

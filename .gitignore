@@ -1,5 +1,5 @@
 # Custom ones
-out/
+dist/
 
 # Created by https://www.gitignore.io/api/node,code,vim,emacs
 # Edit at https://www.gitignore.io/?templates=node,code,vim,emacs
