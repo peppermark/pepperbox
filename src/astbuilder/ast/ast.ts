@@ -18,6 +18,14 @@ export abstract class ASTLeafNode extends AST {
     public reduce<T>(initialValue: T, f: (accumulator: T, node: AST, visitType: TraverseType) => T): T {
         return f(initialValue, this, TraverseType.leaf)
     }
+
+    /**
+     * Evaluates and replaces all inlines
+     * @param input any pure content string
+     */
+    protected interpretInlines(input: string): string {
+        return input // TODO
+    }
 }
 
 export abstract class ASTContainerNode extends AST {
