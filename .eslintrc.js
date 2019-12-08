@@ -14,8 +14,18 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
   ],
   rules: {
-    '@typescript-eslint/no-empty-interface': 1,
-    '@typescript-eslint/no-empty-function': 1,
+    '@typescript-eslint/no-empty-interface': ['error'],
+    '@typescript-eslint/no-empty-function': ['error'],
+    '@typescript-eslint/member-delimiter-style': ['error', {
+      multiline: {
+        delimiter: 'none',
+        requireLast: false
+      },
+      singleline: {
+        delimiter: 'semi',
+        requireLast: false
+      },
+    }],
     'quotes': ['error', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }],
     'no-multi-assign': 'error',
     'no-tabs': 'error',
