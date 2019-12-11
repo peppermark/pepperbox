@@ -1,10 +1,10 @@
 import { AST } from './ast/ast'
 
-export interface ASTBuilder {
+interface ASTBuilder {
     buildAST: (input: string) => AST
 }
 
-export class ASTBuilderImpl implements ASTBuilder {
+class ASTBuilderImpl implements ASTBuilder {
     public buildAST(input: string): AST {
         return {}
     }

@@ -5,8 +5,6 @@ enum TraverseType { start, leaf, end }
 export abstract class AST extends CaseClass {
     public abstract traverse(f: (node: AST, visitType: TraverseType) => void): AST
     public abstract reduce<T>(initialValue: T, f: (accumulator: T, node: AST, visitType: TraverseType) => T): T
-
-    public abstract toPeppermark(): string
 }
 
 export abstract class ASTLeafNode extends AST {

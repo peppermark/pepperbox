@@ -18,15 +18,4 @@ export class ASTheading extends ASTLeafNode {
         this.level = level
         this.content = content
     }
-
-    private replaceStringInBetween(str: string): string {
-        return str.replace(
-            /^( +)([^ ].*[^ ])( +)$/,
-            (match, c1, c2, c3) => c1 + c2.replace(/ +/g, ' ') + c3)
-    }
-
-    public toPeppermark(): string {
-        return '='.repeat(this.level) + ' ' +
-            this.replaceStringInBetween(this.interpretInlines(this.content))
-    }
 }
